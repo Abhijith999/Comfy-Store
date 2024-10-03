@@ -1,4 +1,4 @@
-import { getElement } from "./util.js";
+import { getElement } from "../util.js";
 
 const cartOverlay = getElement('.cart-overlay')
 const toggleCartBtn = getElement('.toggle-cart')
@@ -10,3 +10,7 @@ toggleCartBtn.addEventListener('click', ()=>{
 closeCartBtn.addEventListener('click', ()=>{
     cartOverlay.classList.remove('show')
 })
+
+export const openCart = () =>{
+    cartOverlay.classList.add('show')
+}
